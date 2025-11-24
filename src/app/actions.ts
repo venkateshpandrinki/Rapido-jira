@@ -10,6 +10,8 @@ export async function bookRide(data: {
     dropoff: string
     type: RideType
     fare: number
+    driverName: string
+    driverPhone: string
 }) {
     const session = await auth()
     if (!session?.user?.email) {
@@ -33,6 +35,8 @@ export async function bookRide(data: {
             dropoff: data.dropoff,
             type: data.type,
             fare: data.fare,
+            driverName: data.driverName,
+            driverPhone: data.driverPhone,
             otp,
             status: "PENDING",
         },

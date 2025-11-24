@@ -15,14 +15,14 @@ export default async function Home() {
           {/* Hero Section */}
           <div className="space-y-6">
             <div className="inline-block">
-              <div className="flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full font-bold text-3xl shadow-lg">
-                <Zap className="w-8 h-8" />
+              <div className="flex items-center gap-2 bg-[#FFD700] text-black px-6 py-3 rounded-full font-bold text-3xl shadow-lg">
+                <Zap className="w-8 h-8 fill-black" />
                 <span>Rapido</span>
               </div>
             </div>
             <h1 className="text-5xl font-bold text-gray-800 leading-tight">
               Your Ride,<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-orange-500">
                 On Demand
               </span>
             </h1>
@@ -33,8 +33,8 @@ export default async function Home() {
             {/* Features */}
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="flex items-start gap-3">
-                <div className="p-2 bg-purple-100 rounded-lg">
-                  <Car className="w-6 h-6 text-purple-600" />
+                <div className="p-2 bg-yellow-100 rounded-lg">
+                  <Car className="w-6 h-6 text-yellow-600" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Quick Booking</h3>

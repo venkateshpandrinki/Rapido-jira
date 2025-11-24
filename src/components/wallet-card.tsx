@@ -72,7 +72,7 @@ export default function WalletCard() {
 
     if (loading) {
         return (
-            <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl p-6 text-white shadow-xl">
+            <div className="bg-yellow-300 rounded-2xl p-6 text-white shadow-xl">
                 <div className="animate-pulse">Loading...</div>
             </div>
         );
@@ -81,7 +81,7 @@ export default function WalletCard() {
     return (
         <div className="space-y-6">
             {/* Wallet Balance Card */}
-            <div className="bg-gradient-to-br from-purple-600 via-purple-700 to-blue-600 rounded-2xl p-6 text-white shadow-xl">
+            <div className="bg-yellow-300 rounded-2xl p-6 text-black shadow-xl">
                 <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-2">
                         <Wallet className="w-6 h-6" />
@@ -90,17 +90,17 @@ export default function WalletCard() {
                     <Button
                         onClick={handleAddCredits}
                         disabled={adding}
-                        className="bg-white/20 hover:bg-white/30 text-white border-white/30"
+                        className="bg-black/10 hover:bg-black/20 text-black border-black/10"
                         size="sm"
                     >
                         <Plus className="w-4 h-4 mr-1" />
                         {adding ? 'Adding...' : 'Add ₹50'}
                     </Button>
                 </div>
-                <div className="text-4xl font-bold">
+                <div className="text-4xl font-bold text-black">
                     ₹{balance?.toFixed(2) || '0.00'}
                 </div>
-                <p className="text-purple-200 text-sm mt-2">Available Credits</p>
+                <p className="text-black/70 text-sm mt-2">Available Credits</p>
             </div>
 
             {/* Recent Transactions */}

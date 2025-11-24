@@ -109,7 +109,7 @@ export default function RideHistoryPage() {
                                 </div>
 
                                 <div className="text-right">
-                                    <div className="flex items-center gap-1 text-purple-600 mb-2">
+                                    <div className="flex items-center gap-1 text-yellow-600 mb-2">
                                         <DollarSign className="w-5 h-5" />
                                         <span className="text-2xl font-bold">₹{ride.fare}</span>
                                     </div>

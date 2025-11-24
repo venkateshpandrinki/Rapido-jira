@@ -35,9 +35,9 @@ export default function Navigation() {
             <div className="container mx-auto px-6">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2 text-purple-600 font-bold text-xl">
-                        <div className="p-2 bg-purple-600 rounded-lg">
-                            <Zap className="w-5 h-5 text-white" />
+                    <Link href="/" className="flex items-center gap-2 text-black font-bold text-xl">
+                        <div className="p-2 bg-[#FFD700] rounded-lg">
+                            <Zap className="w-5 h-5 text-black" />
                         </div>
                         <span>Rapido</span>
                     </Link>
@@ -52,8 +52,8 @@ export default function Navigation() {
                                     key={item.href}
                                     href={item.href}
                                     className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${isActive
-                                            ? 'bg-purple-100 text-purple-600 font-semibold'
-                                            : 'text-gray-600 hover:bg-gray-100'
+                                        ? 'bg-[#FFD700] text-black font-semibold'
+                                        : 'text-gray-600 hover:bg-gray-100'
                                         }`}
                                 >
                                     <Icon className="w-5 h-5" />
@@ -84,8 +84,8 @@ export default function Navigation() {
                                     href={item.href}
                                     onClick={() => setIsOpen(false)}
                                     className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive
-                                            ? 'bg-purple-100 text-purple-600 font-semibold'
-                                            : 'text-gray-600 hover:bg-gray-100'
+                                        ? 'bg-purple-100 text-purple-600 font-semibold'
+                                        : 'text-gray-600 hover:bg-gray-100'
                                         }`}
                                 >
                                     <Icon className="w-5 h-5" />
