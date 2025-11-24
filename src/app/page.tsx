@@ -1,7 +1,7 @@
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import SignIn from "@/components/ui/sign-in";
-import RideBooking from "@/components/ride-booking";
+import RideFlow from "@/components/RideFlow";
 import WalletCard from "@/components/wallet-card";
 import { Car, Zap, Shield, Clock } from "lucide-react";
 
@@ -92,7 +92,7 @@ export default async function Home() {
       <div className="grid lg:grid-cols-3 gap-6">
         {/* Main Booking Section */}
         <div className="lg:col-span-2">
-          <RideBooking />
+          <RideFlow />
         </div>
 
         {/* Sidebar */}
